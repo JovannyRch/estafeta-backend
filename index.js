@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/carrier", (req, res) => {
+  console.log(req.body);
   const carriers = [
     {
       service_name: "Estafeta",
