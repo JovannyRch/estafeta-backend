@@ -7,11 +7,32 @@ app.post("/carrier", (req, res) => {
   console.log(req.body);
   const rates = [
     {
-      service_name: "Estafeta",
-      description: "Includes tracking and insurance",
-      service_code: "estafeta",
+      service_name: "A tu domicilio",
+      description: "Envio a domicilio",
+      service_code: "shipping",
       currency: "MXN",
-      total_price: 50.0,
+      total_price: 100.0,
+    },
+    {
+      service_name: "Estafeta Av Fray Luis de Leon",
+      description: "Envio a sucursal",
+      service_code: "pickup_123",
+      currency: "MXN",
+      total_price: 0.0,
+    },
+    {
+      service_name: "Estafeta Av Tecnológico",
+      description: "Envio a sucursal",
+      service_code: "pickup_124",
+      currency: "MXN",
+      total_price: 70.0,
+    },
+    {
+      service_name: "Socio #1",
+      description: "Envio a sucursal",
+      service_code: "socio_121",
+      currency: "MXN",
+      total_price: 190.0,
     },
   ];
   res.json({
