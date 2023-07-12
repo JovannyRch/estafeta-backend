@@ -5,7 +5,7 @@ app.use(express.json());
 
 app.post("/carrier", (req, res) => {
   console.log(req.body);
-  const carriers = [
+  const rates = [
     {
       service_name: "Estafeta",
       description: "Includes tracking and insurance",
@@ -14,7 +14,9 @@ app.post("/carrier", (req, res) => {
       total_price: 50.0,
     },
   ];
-  res.json(carriers);
+  res.json({
+    rates: rates,
+  });
 });
 
 // Iniciar el servidor en el puerto 3000
