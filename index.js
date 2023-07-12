@@ -10,6 +10,7 @@ app.post("/carrier", (req, res) => {
       service_name: "A tu domicilio",
       description: "Envio a domicilio",
       service_code: "shipping",
+      phone_required: true,
       currency: "MXN",
       total_price: 100.0,
     },
@@ -30,6 +31,7 @@ app.post("/carrier", (req, res) => {
     {
       service_name: "Socio #1",
       description: "Envio a sucursal",
+      phone_required: true,
       service_code: "socio_121",
       currency: "MXN",
       total_price: 190.0,
