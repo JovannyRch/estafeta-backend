@@ -19,6 +19,7 @@ app.post("/carrier", (req, res) => {
       description: "Envio a sucursal",
       service_code: "pickup_123",
       currency: "MXN",
+      phone_required: true,
       total_price: 0.0,
     },
     {
